@@ -4,6 +4,7 @@ import { PantallaCuadrado } from '../screens/PantallaCuadrado';
 import { PantallaDivisionArreglo } from '../screens/PantallaDivisionArreglo';
 import { PantallaPromedio } from '../screens/PantallaPromedio';
 import { NavigationContainer } from '@react-navigation/native';
+import { PantallaSumaArreglo } from '../screens/PantallaSumaArreglo';
 
 const Stack = createStackNavigator();
 
@@ -12,6 +13,7 @@ function MyStack() {
     <Stack.Navigator initialRouteName='Home'>
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Cuadrado" component={PantallaCuadrado} />
+      <Stack.Screen name='SumaArreglo' component={PantallaSumaArreglo}/>
       <Stack.Screen name="DivisionArreglo" component={PantallaDivisionArreglo} />
       <Stack.Screen name="Promedio" component={PantallaPromedio} />
     </Stack.Navigator>
