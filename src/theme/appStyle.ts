@@ -25,5 +25,10 @@ export const styles = StyleSheet.create({
         padding:10,
         paddingHorizontal:20,
         borderRadius:5
+    },
+    fli:{
+        textAlign:"center",
+        margin:5,
+        padding: 5
     }
 })
