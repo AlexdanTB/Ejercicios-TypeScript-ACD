@@ -1,10 +1,24 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Text, TouchableOpacity, View } from 'react-native'
 
 export const HomeScreen = () => {
   return (
     <View>
-        <Text>Home</Text>
+        <Text>Ejercicios TypeScript</Text>
+        <View>
+            <TouchableOpacity>
+                <Text>Área del cuadrado</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+                <Text>Suma Arreglo</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+                <Text>División Arreglo</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+                <Text>Promedio</Text>
+            </TouchableOpacity>
+        </View>
     </View>
   )
 }
