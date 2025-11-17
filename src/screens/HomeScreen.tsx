@@ -1,6 +1,6 @@
 import { StackScreenProps } from '@react-navigation/stack'
 import React from 'react'
-import { Text, TouchableOpacity, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { RootStackParamList } from '../navigations/tipos'
 
 type Props = StackScreenProps<RootStackParamList, 'Home'>;
@@ -9,20 +9,37 @@ export const HomeScreen = ({navigation}: Props) => {
   return (
     <View>
         <Text>Ejercicios TypeScript</Text>
-        <View>
-            <TouchableOpacity onPress={()=> navigation.navigate('Cuadrado')}>
+        <View style={styles.view1}>
+            <TouchableOpacity style={styles.btns} 
+            onPress={()=> navigation.navigate('Cuadrado')}>
                 <Text>Área del cuadrado</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={()=> navigation.navigate('SumaArreglo')}>
+            <TouchableOpacity style={styles.btns} 
+            onPress={()=> navigation.navigate('SumaArreglo')}>
                 <Text>Suma Arreglo</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={()=> navigation.navigate('DivisionArreglo')}>
+            <TouchableOpacity style={styles.btns} 
+            onPress={()=> navigation.navigate('DivisionArreglo')}>
                 <Text>División Arreglo</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={()=> navigation.navigate('Promedio')}>
+            <TouchableOpacity style={styles.btns} 
+            onPress={()=> navigation.navigate('Promedio')}>
                 <Text>Promedio</Text>
             </TouchableOpacity>
         </View>
     </View>
   )
 }
+const styles = StyleSheet.create({
+    view1:{
+        gap:20,
+        marginVertical:10,
+        alignItems:"center"
+    },
+    btns:{
+        backgroundColor:"#f4d1c9ff",
+        padding:10,
+        paddingHorizontal:20,
+        borderRadius:5
+    }
+})
