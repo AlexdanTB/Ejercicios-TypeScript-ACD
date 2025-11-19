@@ -26,6 +26,10 @@ export const HomeScreen = ({navigation}: Props) => {
             onPress={()=> navigation.navigate('Promedio')}>
                 <Text>Promedio</Text>
             </TouchableOpacity>
+            <TouchableOpacity style={styles.btns} 
+            onPress={()=> navigation.navigate('Acumulador')}>
+                <Text>Acumulador</Text>
+            </TouchableOpacity>
         </View>
     </View>
   )

@@ -6,6 +6,7 @@ import { PantallaPromedio } from '../screens/PantallaPromedio';
 import { NavigationContainer } from '@react-navigation/native';
 import { PantallaSumaArreglo } from '../screens/PantallaSumaArreglo';
 import { RootStackParamList } from './tipos';
+import { PantallaAcumulador } from '../screens/PantallaAcumulador';
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -16,7 +17,9 @@ function MyStack() {
       <Stack.Screen name="Cuadrado" component={PantallaCuadrado} />
       <Stack.Screen name='SumaArreglo' component={PantallaSumaArreglo}/>
       <Stack.Screen name="DivisionArreglo" component={PantallaDivisionArreglo} />
+      <Stack.Screen name="Acumulador" component={PantallaAcumulador} />
       <Stack.Screen name="Promedio" component={PantallaPromedio} />
+      
     </Stack.Navigator>
   );
 }
