@@ -4,4 +4,5 @@ export type RootStackParamList = {
   DivisionArreglo: undefined;
   Promedio: undefined;
   SumaArreglo: undefined;
+  Acumulador: undefined;
 };
