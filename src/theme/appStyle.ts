@@ -30,5 +30,27 @@ export const styles = StyleSheet.create({
         textAlign:"center",
         margin:5,
         padding: 5
+    },
+    btna:{
+      backgroundColor: "#65388bff",
+      width:60,
+      height:60,
+      borderRadius:50,
+      justifyContent: "center"
+    },
+    btnLocationBL:{
+      position: "absolute",
+      bottom:25,
+      left:25
+    },
+    btnLocationBR:{
+      position: "absolute",
+      bottom:25,
+      right:25
+    },
+    btntxt:{
+      color:"white",
+      fontSize:25,
+      textAlign:"center"
     }
 })

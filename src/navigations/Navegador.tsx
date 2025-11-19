@@ -18,8 +18,7 @@ function MyStack() {
       <Stack.Screen name='SumaArreglo' component={PantallaSumaArreglo}/>
       <Stack.Screen name="DivisionArreglo" component={PantallaDivisionArreglo} />
       <Stack.Screen name="Acumulador" component={PantallaAcumulador} />
-      <Stack.Screen name="Promedio" component={PantallaPromedio} />
-      
+      <Stack.Screen name="Promedio" component={PantallaPromedio} />     
     </Stack.Navigator>
   );
 }
