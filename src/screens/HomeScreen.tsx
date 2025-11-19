@@ -2,14 +2,15 @@ import { StackScreenProps } from '@react-navigation/stack'
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { RootStackParamList } from '../navigations/tipos'
+import { styles } from '../theme/appStyle';
 
 type Props = StackScreenProps<RootStackParamList, 'Home'>;
 
 export const HomeScreen = ({navigation}: Props) => {
   return (
     <View>
-        <Text>Ejercicios TypeScript</Text>
-        <View style={styles.view1}>
+        <Text style={styles.titulo}>Ejercicios TypeScript</Text>
+        <View style={styles.vw2}>
             <TouchableOpacity style={styles.btns} 
             onPress={()=> navigation.navigate('Cuadrado')}>
                 <Text>Área del cuadrado</Text>
@@ -34,16 +35,3 @@ export const HomeScreen = ({navigation}: Props) => {
     </View>
   )
 }
-const styles = StyleSheet.create({
-    view1:{
-        gap:20,
-        marginVertical:10,
-        alignItems:"center"
-    },
-    btns:{
-        backgroundColor:"#f4d1c9ff",
-        padding:10,
-        paddingHorizontal:20,
-        borderRadius:5
-    }
-})
