@@ -15,9 +15,17 @@ export const PantallaPromedio = () => {
     {nombre: "Gerson", edad: 18, calificacion: 9}
   ]
 
+    const promedios = alumnos.map((alumno, i)=>(
+       <Text key={i}>{alumno.nombre}: {alumno.calificacion}</Text>
+    ))
+   
+
   return (
     <View>
-      <Text>Promedio</Text>
+      <Text>Promedio de calificaciones</Text>
+      <Text>Alumnos:</Text>
+      <View>{promedios}</View>
     </View>
+      
   )
 }
